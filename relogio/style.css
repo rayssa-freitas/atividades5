@@ -1,0 +1,53 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html, input, button {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+ height: 100vh;
+ width: 100vw;
+ background-color: bisque;
+ color:brown;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 2rem;
+}
+
+.clock {
+ width: 100%;
+ max-width: 720px;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 6rem; /*6rem = 96px (16px * 6) */
+ gap: 2rem; /*32px*/
+}
+
+.hour, .minutes, .seconds {
+ padding: 1rem;
+ background-color: azure;
+ border-radius: 6px;
+}
+
+button {
+ height: 100px;
+ padding: 16px 32px;
+ font-size: 1.5rem;
+ border: 0;
+ background-color: rgba(176, 74, 74, 0.522);
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+button:hover {
+ filter: brightness(0.8); /*deixa mais escuro ao passar o mouse*/
+}
+
